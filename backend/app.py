@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configuration
-MODEL_PATH = 'models/emotion_model.h5'
+MODEL_PATH = 'models/emotion_model.keras'
 CASCADE_PATH = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
 
 # CRITICAL: Emotion labels MUST match the order from training
@@ -511,9 +511,9 @@ if __name__ == '__main__':
     print("\n" + "="*70)
     print("\n💡 Tips:")
     print("  • Ensure good lighting for better face detection")
-    print("  • Model file: models/emotion_model.h5")
+    print("  • Model file: models/emotion_model.keras")
     print("  • Train model first if not available: python train_model.py")
     print("\n" + "="*70 + "\n")
     
     # Run Flask app
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=8000)
