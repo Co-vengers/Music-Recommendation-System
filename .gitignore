@@ -1,0 +1,81 @@
+# =========================
+# Python / Virtual Env
+# =========================
+backend/venv/
+backend/.venv/
+venv/
+.env/
+*.env
+
+# =========================
+# Python Cache / Compiled
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# =========================
+# Machine Learning Models
+# =========================
+backend/models/
+*.h5
+*.keras
+*.pt
+*.onnx
+
+# =========================
+# Datasets
+# =========================
+backend/data/
+*.csv
+*.zip
+*.tar.gz
+
+# =========================
+# Training Outputs / Plots
+# =========================
+backend/plots/
+*.png
+*.jpg
+*.jpeg
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+nohup.out
+
+# =========================
+# Jupyter / Notebooks
+# =========================
+.ipynb_checkpoints/
+*.ipynb
+
+# =========================
+# Node / React
+# =========================
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# OS / Editor Files
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# Kaggle / Colab Artifacts
+# =========================
+kaggle.json
+
