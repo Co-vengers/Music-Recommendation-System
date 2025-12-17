@@ -36,10 +36,10 @@ backend/data/
 # =========================
 # Training Outputs / Plots
 # =========================
-backend/plots/
-*.png
-*.jpg
-*.jpeg
+# backend/plots/
+# *.png
+# *.jpg
+# *.jpeg
 
 # =========================
 # Logs
