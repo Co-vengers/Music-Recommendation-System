@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: emotion-backend
+    expose:
+      - "8000"
+    environment:
+      SPOTIFY_CLIENT_ID: ${SPOTIFY_CLIENT_ID}
+      SPOTIFY_CLIENT_SECRET: ${SPOTIFY_CLIENT_SECRET}
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: emotion-frontend
+    ports:
+      - "80:80"
+    environment:
+      REACT_APP_BACKEND_URL: http://backend:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
