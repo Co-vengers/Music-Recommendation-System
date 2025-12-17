@@ -19,11 +19,11 @@ __pycache__/
 # =========================
 # Machine Learning Models
 # =========================
-backend/models/
-*.h5
-*.keras
-*.pt
-*.onnx
+# backend/models/
+# *.h5
+# *.keras
+# *.pt
+# *.onnx
 
 # =========================
 # Datasets
