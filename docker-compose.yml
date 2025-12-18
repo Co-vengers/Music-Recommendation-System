@@ -19,7 +19,7 @@ services:
     ports:
       - "80:80"
     environment:
-      REACT_APP_BACKEND_URL: http://backend:8000
+      REACT_APP_BACKEND_URL: http://136.114.70.255:8000
     depends_on:
       - backend
     restart: unless-stopped

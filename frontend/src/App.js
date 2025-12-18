@@ -17,7 +17,7 @@ const EmotionMusicSystem = () => {
   const fileInputRef = useRef(null);
   const streamRef = useRef(null);
 
-  const BACKEND_URL = 'http://localhost:8000';
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
   // Emotion to icon mapping
   const emotionIcons = {
